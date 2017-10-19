@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Freewall",
+  "description": "Bypasses paywalls on certain websites.",
+  "version": "1.0",
+
+  "homepage_url": "https://github.com/owenandrews/freewall",
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png",
+    "512": "icon512.png"
+  },
+
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "freewall.js"
+    ]
+  },
+
+  "permissions": [
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "http://www.example.com/"
+  ]
+}
